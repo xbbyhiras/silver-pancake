@@ -1,0 +1,14 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - name: echo 'start dev app'
+    command: |
+      cd silver-pancake
+      yarn rw dev
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - name: silver-pancake
+    description: show the app
+    port: 8910
+    onOpen: open-preview
+    visibility: public
