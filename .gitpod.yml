@@ -1,9 +1,10 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - name: echo 'start dev app'
+  - name: echo 'deno fresh'
+    init: curl -fsSL https://deno.land/install.sh | sh
     command: |
       cd silver-pancake
-      yarn rw dev
+      ls
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
